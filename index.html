@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>PIAIC</title>
+    <style>
+      body {
+    font-family:  sans-serif;
+    background-color: #e3e7e9;
+    margin: 0px;
+  }
+  
+  .navbar {
+    background-image: linear-gradient(270deg,#08383d,#01645f);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+}
+  
+  .navbar a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 50px;
+    margin-top: 10px;
+  }
+  
+  .dropdown {
+    float: right;
+    overflow: hidden;
+    margin-right: 50px;
+    margin-top: 10px;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    color: #51d98d;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-image: linear-gradient(270deg,#08383d,#01645f);
+    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    border-bottom: 1px solid #51d98d;
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    color: #51d98d;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.navlogo{
+    height: 120px;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    position: fixed;
+  }
+  i {
+      color: white;
+  }
+.president {
+ margin-top: 100px;
+ width: 90%;
+}
+.text {
+    margin-left: 200px;
+}
+.text h1 {
+    font-size: 50px;
+   
+}
+.apply {
+    background-image: linear-gradient(270deg,#08d88d,#0eb5a3);
+    color: white;
+    border: none;
+    font-size: 12px;
+    padding-top: 11px;
+    padding-right: 44px;
+    padding-bottom: 11px;
+    padding-left: 44px;
+    border-radius: 5px;
+    margin-left: 650px;
+    margin-top: -7px;
+}
+
+#first{
+    border: solid 2px black;
+    width: 270px;
+    text-align: center;
+    height: 45px;
+    padding-top: 80px;
+    border-top-width: 40px;
+    padding-bottom: 40px;
+    border-radius: 7px;
+    border-top-color: #192a56;
+    color: #192a56;
+    background-color: white;
+    border-bottom-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    display: inline-block;
+}
+
+#second{
+    border: solid 2px black;
+    width: 270px;
+    text-align: center;
+    height: 45px;
+    padding-top: 80px;
+    border-top-width: 40px;
+    padding-bottom: 50px;
+    border-radius: 7px;
+    border-top-color: #e1006a;
+    color: #e1006a;
+    background-color: white;
+    border-bottom-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    margin-bottom: 100px;
+    margin-left: 58px;      
+    display: inline-block;
+}          
+#third{
+    border: solid 2px black;
+    width: 270px;
+    text-align: center;
+    height: 45px;
+    padding-top: 80px;
+    border-top-width: 40px;
+    padding-bottom: 40px;
+    border-radius: 7px;
+    border-top-color: #fbc314;
+    color: #fbc314;
+    background-color: white;
+    border-bottom-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    margin-bottom: 100px;
+    margin-left: 58px;
+    display: inline-block;
+}
+
+#fourth{
+    border: solid 2px black;
+    width: 270px;
+    text-align: center;
+    height: 45px;
+    padding-top: 80px;
+    border-top-width: 40px;
+    padding-bottom: 40px;
+    border-radius: 7px;
+    border-top-color: #1b8f8b;
+    color: #1b8f8b;
+    background-color: white;
+    border-bottom-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    margin-bottom: 100px;
+    margin-left: 58px;
+    display: inline-block;
+}
+#head{
+    text-align: center;
+    font-family: monospace;
+    pad: 10px;
+    font-size: 44px;
+}
+
+.video{
+  background-color: #2b2929;
+  text-align: center;
+  padding: 30px;
+}
+
+#h1{
+  text-align: left;
+  font-size: 50px;
+  color: white;
+}
+
+#p{
+  text-align: left;
+  color: #91dac7;
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+#p1{
+  text-align: left;
+  margin-left: 20px;
+  color: white;
+  font-size: 15px;
+}
+
+.pic{
+  background-color: #00bf9a;
+  padding: 20px;
+  padding-left: 20px;
+}
+
+#pics{
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+}
+
+#pr1 {
+  margin-left: 40px;
+}
+
+#hh{
+  color: black;
+}
+
+.img-text {
+  position: absolute;
+  bottom: -1750px;
+  left: 800px
+}
+
+#hhs{
+  color: white;
+}
+.part{
+  text-align: center;
+  font-family: monospace;
+  font-size: 35px;
+  color: #192a56;
+  position: absolute;
+  margin-left: 500px;
+
+}
+
+#logo1{
+  margin-left: 400px;
+  margin-bottom: 50px;
+  margin-top: 25px;
+}
+
+#logo2{
+  margin-left: 50px;
+  margin-bottom: 90px;
+}
+#logo3{
+  margin-left: 35px;
+  margin-bottom: 115px;
+}
+
+.footer{
+  background-color: yellow;
+  padding: 20px;
+}
+
+#foot{
+  padding-bottom: -10;
+  margin: 0;
+}
+
+#loca{
+  margin-right: 100px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav">
+        <a href="#">WIT</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            About
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">The President</a>
+            <a href="#">Management Comitee</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Available Programs
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Artificial Intelligence</a>
+            <a href="#">Cloud Native Web And Mobile Computing</a>
+            <a href="#">Blockchain</a>
+            <a href="#">Internet Of Things</a>
+          </div>
+        </div>
+        <a href="#">Apply</a>
+        <a href="#">How It Works</a>
+      </div>
+    </div>
+    <img
+      class="navlogo"
+      src="https://www.piaic.org/static/media/Logo.fb7de414.svg"
+    />
+    <br />
+    <br />
+    <table>
+      <tr>
+        <td>
+          <div class="president">
+            <img src="images/president.png" alt="president" />
+          </div>
+        </td>
+        <td>
+          <div class="text">
+            <h1>Presidential Initiative</h1>
+            <h3>for Artificial Intelligence & Computing (PIAIC)</h3>
+            <br />
+            <p>
+            The mission of PIAIC is to reshape Pakistan by revolutionizing
+            education, research, and business by<br />
+            adopting latest, cutting-edge technologies. Experts are calling this
+            the 4th industrial revolution.<br />
+            We want Pakistan to become a global hub for AI, data science, cloud
+            native computing, edge computing,<br />
+            blockchain, augmented reality, and internet of things.
+          </p>
+        </div>
+          <button class="apply">Apply</button>
+        </td>
+      </tr>
+    </table>
+       <h1 id="head">Available programs</h1>    
+    <h4 id="first">Artificial Intelligence</h4>
+    <h4 id="second">Cloud Native And Mobile Web</h4>
+    <h4 id="third">BlockChain</h4>
+    <h4 id="fourth">Internet Of Things And AI</h4> <br/>
+    <div class="video">
+      <h1 id="h1">Videos</h1>
+      <iframe id="vid" width="817" height="480" src="https://www.youtube.com/embed/RuYbBHHF4VM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/>
+      <p id="p">PIAIC Offering Free First Quarter Classes Online</p>
+      <p id="p1">The mission of PIAIC is to reshape Pakistan by revolutionizing education, research, and<br/> business by adopting latest, cutting-edge technologies.</p>
+    </div>
+    <div class="pic">
+      <h1 id="pics">Images</h1>
+      <img id="pr1" src="pic.jpg" alt="picture" width="700px" height="400px">
+      <div class="img-text">
+      <h1 id="hh">President Launching The PIAIC <br/>Website</h1>
+      <p id="hhs"> President Dr. Arif Alvi launching the official website of the <br/>PIAIC on December 9, 2018. From left to right: Mr. Adil Altaf<br/> (Director Panacloud), Mr. Zia Ullah Khan (CEO Panacloud),<br/> Mr. Hunaid Lakhani (Chancellor Iqra University),<br/> President Dr. Arif Alvi, Mr. Sulaiman S. Mehdi<br/> (Chairman Pakistan Stock Exchange), Mr. Zeeshan Hanif <br/>(CTO Panacloud), Maulana Bashir Farooqui<br> (Founder Saylani Welfare Trust), Mr. Yousuf Lakhani (President Saylani Welfare Trust).</p>
+    </div>
+    </div>
+    <h1 class="part">Strategic Partners</h1>
+    <img id="logo1" src="images/panacloudLogo.9b5ef574.svg" width="150px" height="200px">
+    <img id="logo2" src="images/psx2.c50b5ae4.png" width="100px" height="100px">
+    <img id="logo3" src="images/saylaniLogo.c2a52d0a.png" width="200px" height="60px">
+    </div>
+  </body>
+    </html>
+  
